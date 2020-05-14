@@ -247,3 +247,13 @@ noremap to :+tabnext<CR>
 " Move the tabs with tmn and tmi
 noremap tmn :-tabmove<CR>
 noremap tmo :+tabmove<CR>
+
+call plug#begin('~/.config/nvim/plugged')
+Plug 'lambdalisue/suda.vim' " do stuff like :sudowrite
+call plug#end()
+
+" ===
+" === suda.vim
+" ===
+"cnoreabbrev sw w suda://%
+nnoremap <LEADER>sudo :w suda://%<CR>

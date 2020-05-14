@@ -248,12 +248,4 @@ noremap to :+tabnext<CR>
 noremap tmn :-tabmove<CR>
 noremap tmo :+tabmove<CR>
 
-call plug#begin('~/.config/nvim/plugged')
-Plug 'lambdalisue/suda.vim' " do stuff like :sudowrite
-call plug#end()
 
-" ===
-" === suda.vim
-" ===
-"cnoreabbrev sw w suda://%
-nnoremap <LEADER>sudo :w suda://%<CR>
